@@ -1,6 +1,7 @@
 pipeline{
     
        agent any 
+       parameters { string(name: 'ENVIRONMENT', defaultValue: '', description: '') }
        stages{
            stage ( "checkout code ") {
                steps {
@@ -9,7 +10,7 @@ pipeline{
            }
            stage("Build maven code") {
                steps{
-                   sh "cd demo-app && mvn install"
+                   sh "echo $ENVIRONMENT"
                }
            }
        }
