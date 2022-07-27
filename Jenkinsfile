@@ -6,7 +6,7 @@ pipeline {
       stages {
          stage(" build my code , CI ") {
             steps {
-                sh "mvn deploy &&  cp target/my-app-1.0-SNAPSHOT.jar my-app.jar"
+                sh "mvn deploy &&  cp target/my-app-1.0.jar my-app.jar"
             }
         }
           stage(" Create and push Docker image for my package") {
