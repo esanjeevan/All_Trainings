@@ -16,7 +16,7 @@ pipeline {
         }
         stage(" deploy the docker container") {
             steps {
-                sh "sudo docker run -d --name myapp:${ tagname}  vishnu11/myapp:${ tagname } "
+                sh "sudo docker run -d --name myapp-${ tagname}  vishnu11/myapp:${ tagname } "
             }
         }  
     }
