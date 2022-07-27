@@ -11,7 +11,7 @@ pipeline {
         }
           stage(" Create and push Docker image for my package") {
             steps {
-                sh "sudo docker build -t vishnu11/myapp:${ tagname } .  && docker push vishnu11/myapp:${ tagname }"
+                sh "sudo docker build -t vishnu11/myapp:${ tagname } .  && sudo docker push vishnu11/myapp:${ tagname }"
             }
         }
         stage(" deploy the docker container") {
