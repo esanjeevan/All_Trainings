@@ -2,6 +2,7 @@ pipeline {
     agent {
          node { label "agent1" }
     }
+    parameters { string(name: 'tagname', defaultValue: '', description: ' this is tag given to the Docker image ') }
       stages {
          stage(" build my code , CI ") {
             steps {
