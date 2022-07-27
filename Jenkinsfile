@@ -5,7 +5,7 @@ pipeline {
       stages {
          stage(" build my code , CI ") {
             steps {
-                sh "mvn package"
+                sh "mvn deploy"
             }
         }
     }
