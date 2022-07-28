@@ -16,4 +16,5 @@ node{
                 sh "sudo docker run -d --name myapp-${ tagname}  vishnu11/myapp:${ tagname } "
             }
         }  
-    }
+	  }
+}	  
