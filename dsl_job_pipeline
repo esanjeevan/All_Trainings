@@ -1,0 +1,20 @@
+pipelineJob('Pipeline_job_Demo') { 
+ definition { 
+ cpsScm { 
+ scm { 
+ git { 
+ remote { 
+ url('https://github.com/cloud-dev-user/java-war-project.git') 
+ } 
+ branch('*/master') 
+ } 
+ } 
+ lightweight() 
+ } 
+ } 
+} 
+job('example') { 
+ steps { 
+ shell('echo Hello World!') 
+ } 
+}
