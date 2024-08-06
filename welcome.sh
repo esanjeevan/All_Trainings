@@ -1,1 +1,1 @@
-echo "hello jenkins using maven and git "
+echo "hello jenkins using maven and git"
