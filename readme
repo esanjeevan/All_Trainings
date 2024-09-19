@@ -1,1 +1,5 @@
 this is sample java project which will create war package 
+
+this change of jenkinsfile will propogate from feature branch till master
+
+Changed code for demo 
